@@ -1,4 +1,9 @@
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 /* Container */
 .content {
     
@@ -48,4 +53,19 @@
     margin-right: -4px;
     *zoom: 1;
     *display: inline;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+
+/**/
+.pink {
+    background: #fccfff;
+}
+
+
+.blue {
+    background: rgb(62, 62, 179);
 }
