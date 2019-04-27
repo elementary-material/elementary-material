@@ -3,23 +3,22 @@
  * Elementary Grid vAlfa 
  * Licensed under MIT (https://github.com/matthsena/elementary-grid/blob/master/LICENSE)
  */
-html {
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-    color: #1c1c1c;
-    font-family: Arial, Helvetica, sans-serif
-}
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px
 }
+html {
+    width: 100%;
+    color: #1c1c1c;
+    font-family: Arial, Helvetica, sans-serif
+}
 /*!
- * Container
+ * Content
  */
-.container {
+.content {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px
@@ -57,59 +56,59 @@ html {
  */
 @media (min-width: 768px) {
     .md-1 {
-        -ms-flex: 0 0 8.3333%;
-        flex: 0 0 8.3333%;
-        max-width: 8.3333%
+        -ms-flex: 0 0 calc(100% / 12);
+        flex: 0 0 calc(100% / 12);
+        max-width: calc(100% / 12)
     }
     .md-2 {
-        -ms-flex: 0 0 16.6666%;
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 2));
+        flex: 0 0 calc(100% / (12 / 2));
+        max-width: calc(100% / (12 / 2))
     }
     .md-3 {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%
+        -ms-flex: 0 0 calc(100% / (12 / 3));
+        flex: 0 0 calc(100% / (12 / 3));        
+        max-width: calc(100% / (12 / 3))
     }
     .md-4 {
-        -ms-flex: 0 0 33.3333%;
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 4));
+        flex: 0 0 calc(100% / (12 / 4));
+        max-width: calc(100% / (12 / 4))
     }
     .md-5 {
-        -ms-flex: 0 0 41.6666%;
-        flex: 0 0 41.6666%;
-        max-width: 41.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 5));
+        flex: 0 0 calc(100% / (12 / 5));
+        max-width: calc(100% / (12 / 5))
     }
     .md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%
+        -ms-flex: 0 0 calc(100% / (12 / 6));
+        flex: 0 0 calc(100% / (12 / 6));
+        max-width: calc(100% / (12 / 6))
     }
     .md-7 {
-        -ms-flex: 0 0 58.3333%;
-        flex: 0 0 58.3333%;
-        max-width: 58.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 7));
+        flex: 0 0 calc(100% / (12 / 7));
+        max-width: calc(100% / (12 / 7))
     }
     .md-8 {
-        -ms-flex: 0 0 66.6666%;
-        flex: 0 0 66.6666%;
-        max-width: 66.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 8));
+        flex: 0 0 calc(100% / (12 / 8));
+        max-width: calc(100% / (12 / 8))
     }
     .md-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%
+        -ms-flex: 0 0 calc(100% / (12 / 9));
+        flex: 0 0 calc(100% / (12 / 9));
+        max-width: calc(100% / (12 / 9))
     }
     .md-10 {
-        -ms-flex: 0 0 83.3333%;
-        flex: 0 0 83.3333%;
-        max-width: 83.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 10));
+        flex: 0 0 calc(100% / (12 / 10));
+        max-width: calc(100% / (12 / 10))
     }
     .md-11 {
-        -ms-flex: 0 0 91.6666%;
-        flex: 0 0 91.6666%;
-        max-width: 91.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 11));
+        flex: 0 0 calc(100% / (12 / 11));
+        max-width: calc(100% / (12 / 11))
     }
     .md-12 {
         -ms-flex: 0 0 100%;
@@ -122,59 +121,59 @@ html {
  */
 @media (min-width: 576px) and (max-width: 768px) {
     .sm-1 {
-        -ms-flex: 0 0  8.3333%;
-        flex: 0 0  8.3333%;
-        max-width: 8.3333%
+        -ms-flex: 0 0  calc(100% / 12);
+        flex: 0 0  calc(100% / 12);
+        max-width: calc(100% / 12)
     }
     .sm-2 {
-        -ms-flex: 0 0 16.6666%;
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 2));
+        flex: 0 0 calc(100% / (12 / 2));
+        max-width: calc(100% / (12 / 2))
     }
     .sm-3 {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%
+        -ms-flex: 0 0 calc(100% / (12 / 3));
+        flex: 0 0 calc(100% / (12 / 3));
+        max-width: calc(100% / (12 / 3))
     }
     .sm-4 {
-        -ms-flex: 0 0 33.3333%;
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 4));
+        flex: 0 0 calc(100% / (12 / 4));
+        max-width: calc(100% / (12 / 4))
     }
     .sm-5 {
-        -ms-flex: 0 0 41.6666%;
-        flex: 0 0 41.6666%;
-        max-width: 41.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 5));
+        flex: 0 0 calc(100% / (12 / 5));
+        max-width: calc(100% / (12 / 5))
     }
     .sm-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%
+        -ms-flex: 0 0 calc(100% / (12 / 6));
+        flex: 0 0 calc(100% / (12 / 6));
+        max-width: calc(100% / (12 / 6))
     }
     .sm-7 {
-        -ms-flex: 0 0 58.3333%;
-        flex: 0 0 58.3333%;
-        max-width: 58.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 7));
+        flex: 0 0 calc(100% / (12 / 7));
+        max-width: calc(100% / (12 / 7))
     }
     .sm-8 {
-        -ms-flex: 0 0 66.6666%;
-        flex: 0 0 66.6666%;
-        max-width: 66.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 8));
+        flex: 0 0 calc(100% / (12 / 8));
+        max-width: calc(100% / (12 / 8))
     }
     .sm-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%
+        -ms-flex: 0 0 calc(100% / (12 / 9));
+        flex: 0 0 calc(100% / (12 / 9));
+        max-width: calc(100% / (12 / 9))
     }
     .sm-10 {
-        -ms-flex: 0 0 83.3333%;
-        flex: 0 0 83.3333%;
-        max-width: 83.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 10));
+        flex: 0 0 calc(100% / (12 / 10));
+        max-width: calc(100% / (12 / 10))
     }
     .sm-11 {
-        -ms-flex: 0 0 91.6666%;
-        flex: 0 0 91.6666%;
-        max-width: 91.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 11));
+        flex: 0 0 calc(100% / (12 / 11));
+        max-width: calc(100% / (12 / 11))
     }
     .sm-12 {
         -ms-flex: 0 0 100%;
@@ -187,59 +186,59 @@ html {
  */
 @media (max-width: 576px) {
     .xs-1 {
-        -ms-flex: 0 0 8.3333%;
-        flex: 0 0 8.3333%;
-        max-width: 8.3333%
+        -ms-flex: 0 0 calc(100% / 12);
+        flex: 0 0 calc(100% / 12);
+        max-width: calc(100% / 12)
     }
     .xs-2 {
-        -ms-flex: 0 0 16.6666%;
-        flex: 0 0 16.6666%;
-        max-width: 16.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 2));
+        flex: 0 0 calc(100% / (12 / 2));
+        max-width: calc(100% / (12 / 2))
     }
     .xs-3 {
-        -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
-        max-width: 25%
+        -ms-flex: 0 0 calc(100% / (12 / 3));
+        flex: 0 0 calc(100% / (12 / 3));
+        max-width: calc(100% / (12 / 3))
     }
     .xs-4 {
-        -ms-flex: 0 0 33.3333%;
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 4));
+        flex: 0 0 calc(100% / (12 / 4));
+        max-width: calc(100% / (12 / 4))
     }
     .xs-5 {
-        -ms-flex: 0 0 41.6666%;
-        flex: 0 0 41.6666%;
-        max-width: 41.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 5));
+        flex: 0 0 calc(100% / (12 / 5));
+        max-width: calc(100% / (12 / 5))
     }
     .xs-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: 50%
+        -ms-flex: 0 0 calc(100% / (12 / 6));
+        flex: 0 0 calc(100% / (12 / 6));
+        max-width: calc(100% / (12 / 6))
     }
     .xs-7 {
-        -ms-flex: 0 0 58.3333%;
-        flex: 0 0 58.3333%;
-        max-width: 58.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 7));
+        flex: 0 0 calc(100% / (12 / 7));
+        max-width: calc(100% / (12 / 7))
     }
     .xs-8 {
-        -ms-flex: 0 0 66.6666%;
-        flex: 0 0 66.6666%;
-        max-width: 66.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 8));
+        flex: 0 0 calc(100% / (12 / 8));
+        max-width: calc(100% / (12 / 8))
     }
     .xs-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%
+        -ms-flex: 0 0 calc(100% / (12 / 9));
+        flex: 0 0 calc(100% / (12 / 9));
+        max-width: calc(100% / (12 / 9))
     }
     .xs-10 {
-        -ms-flex: 0 0 83.3333%;
-        flex: 0 0 83.3333%;
-        max-width: 83.3333%
+        -ms-flex: 0 0 calc(100% / (12 / 10));
+        flex: 0 0 calc(100% / (12 / 10));
+        max-width: calc(100% / (12 / 10))
     }
     .xs-11 {
-        -ms-flex: 0 0 91.6666%;
-        flex: 0 0 91.6666%;
-        max-width: 91.6666%
+        -ms-flex: 0 0 calc(100% / (12 / 11));
+        flex: 0 0 calc(100% / (12 / 11));
+        max-width: calc(100% / (12 / 11))
     }
     .xs-12 {
         -ms-flex: 0 0 100%;
@@ -271,17 +270,8 @@ html {
 /*!
  * Navbar
  */
- * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0px;
-    font-family: 'segoe ui';
-  }
-  
   .navbar {
-    height: 50px;
+    height: 60px;
     background-color: #1c1c1c;
     display: -ms-flexbox;
     display: flex;
@@ -291,7 +281,7 @@ html {
     z-index: 9999;
   }
   
-  .navbar > .nav-header {
+  .navbar >.nav-header {
     display: inline;
   }
   
@@ -299,7 +289,7 @@ html {
     display: inline-block;
     font-size: 22px;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
   }
   
   .navbar > .nav-btn {
