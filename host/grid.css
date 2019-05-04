@@ -469,20 +469,22 @@ html {
     left: 0;
     z-index: 9999;
 }
+
 .btn {
-max-height: auto;
-padding: 10px;
-font-size: 15px;
-box-shadow: 1px 1px 3px var(--grey)
-}
-.btn.btn-indigo {
-  background: var(--indigo);
-  color: var(--almost-white);
-}
-.btn.btn-indigo:hover {
-  background: var(--almost-white);
-  color: var(--indigo);
-  transition: all .3s linear;
-  cursor: pointer;
+    max-height: auto;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 1px 1px 3px var(--grey)
 }
 
+.btn.btn-indigo {
+    background: var(--indigo);
+    color: var(--almost-white);
+}
+
+.btn.btn-indigo:hover {
+    background: var(--almost-white);
+    color: var(--indigo);
+    transition: all .3s linear;
+    cursor: pointer;
+}
