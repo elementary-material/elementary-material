@@ -47,6 +47,7 @@ html {
 body {
     background: var(--really-light-grey);
 }
+
 /*!
  * Content
  */
@@ -75,8 +76,7 @@ body {
     flex-basis: 0;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 5px 15px;
     position: relative;
     max-width: 100%;
     width: 100%;
@@ -468,26 +468,245 @@ body {
     font-size: 15px;
     box-shadow: 1px 1px 2px var(--strong-grey)
 }
-.btn:active, .btn:focus {
+
+.btn:active,
+.btn:focus {
     outline: none;
 }
-.btn.btn-indigo {
+
+.btn:hover {
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+/*!
+* Colors fill
+*/
+
+/* red */
+.red {
+    background: var(--red);
+    color: var(--strong-grey);
+}
+
+.btn.red:hover {
+    background: var(--strong-grey);
+    color: var(--red);
+}
+
+/*pink*/
+.pink {
+    background: var(--pink);
+    color: var(--strong-grey);
+}
+
+.btn.pink:hover {
+    background: var(--strong-grey);
+    color: var(--pink);
+}
+
+/*purple*/
+.purple {
+    background: var(--purple);
+    color: var(--almost-white);
+}
+
+.btn.purple:hover {
+    background: var(--almost-white);
+    color: var(--purple);
+}
+
+/*deep purple*/
+.deep-purple {
+    background: var(--deep-purple);
+    color: var(--almost-white);
+}
+
+.btn.deep-purple:hover {
+    background: var(--almost-white);
+    color: var(--deep-purple);
+}
+
+/*indigo*/
+.indigo {
     background: var(--indigo);
     color: var(--almost-white);
 }
 
-.btn.btn-indigo:hover {
+.btn.indigo:hover {
     background: var(--almost-white);
     color: var(--indigo);
-    transition: all .3s linear;
-    cursor: pointer;
+}
+
+/*blue*/
+.blue {
+    background: var(--blue);
+    color: var(--almost-white);
+}
+
+.btn.blue:hover {
+    background: var(--almost-white);
+    color: var(--blue);
+}
+
+/*light-blue*/
+.light-blue {
+    background: var(--light-blue);
+    color: var(--almost-white);
+}
+
+.btn.light-blue:hover {
+    background: var(--almost-white);
+    color: var(--light-blue);
+}
+
+/*cyan*/
+.cyan {
+    background: var(--cyan);
+    color: var(--strong-grey);
+}
+
+.btn.cyan:hover {
+    background: var(--strong-grey);
+    color: var(--cyan);
+}
+
+/*teal*/
+.teal {
+    background: var(--teal);
+    color: var(--strong-grey);
+}
+
+.btn.teal:hover {
+    background: var(--strong-grey);
+    color: var(--teal);
+}
+
+/*green*/
+.green {
+    background: var(--green);
+    color: var(--strong-grey);
+}
+
+.btn.green:hover {
+    background: var(--strong-grey);
+    color: var(--green);
+}
+
+/*light-green*/
+.light-green {
+    background: var(--light-green);
+    color: var(--strong-grey);
+}
+
+.btn.light-green:hover {
+    background: var(--strong-grey);
+    color: var(--light-green);
+}
+
+/*lime*/
+.lime {
+    background: var(--lime);
+    color: var(--strong-grey);
+}
+
+.btn.lime:hover {
+    background: var(--strong-grey);
+    color: var(--lime);
+}
+
+/*yellow*/
+.yellow {
+    background: var(--yellow);
+    color: var(--strong-grey);
+}
+
+.btn.yellow:hover {
+    background: var(--strong-grey);
+    color: var(--yellow);
+}
+
+/*amber*/
+.amber {
+    background: var(--amber);
+    color: var(--strong-grey);
+}
+
+.btn.amber:hover {
+    background: var(--strong-grey);
+    color: var(--amber);
+}
+
+/*orange*/
+.orange {
+    background: var(--orange);
+    color: var(--strong-grey);
+}
+
+.btn.orange:hover {
+    background: var(--strong-grey);
+    color: var(--orange);
+}
+
+/*deep-orange*/
+.deep-orange {
+    background: var(--deep-orange);
+    color: var(--almost-white);
+}
+
+.btn.deep-orange:hover {
+    background: var(--almost-white);
+    color: var(--deep-orange);
+}
+
+/*brown*/
+.brown {
+    background: var(--brown);
+    color: var(--almost-white);
+}
+
+.btn.brown:hover {
+    background: var(--almost-white);
+    color: var(--brown);
+}
+
+/*grey*/
+.grey {
+    background: var(--grey);
+    color: var(--strong-grey);
+}
+
+.btn.grey:hover {
+    background: var(--strong-grey);
+    color: var(--grey);
+}
+
+/*strong-grey*/
+.strong-grey {
+    background: var(--strong-grey);
+    color: var(--almost-white);
+}
+
+.btn.strong-grey:hover {
+    background: var(--almost-white);
+    color: var(--strong-grey);
+}
+
+/*blue-grey*/
+.blue-grey {
+    background: var(--blue-grey);
+    color: var(--almost-white);
+}
+
+.btn.blue-grey:hover {
+    background: var(--almost-white);
+    color: var(--blue-grey);
 }
 
 /*!
 * Card component
 */
 div.card {
-    margin: 10px 10px;
     box-shadow: 1px 1px 2px var(--strong-grey);
     padding: 15px;
     background: var(--almost-white);
