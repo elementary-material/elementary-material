@@ -71,7 +71,7 @@ body {
 /*!
  * Columns
  */
-.col {
+.row>.col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -ms-flex-positive: 1;
@@ -701,6 +701,17 @@ body {
 .btn.blue-grey:hover {
     background: var(--almost-white);
     color: var(--blue-grey);
+}
+
+/*almost-white*/
+.almost-white {
+    background: var(--almost-white);
+    color: var(--strong-grey);
+}
+
+.btn.almost-white:hover {
+    background: var(--strong-grey);
+    color: var(--almost-white);
 }
 
 /*!
