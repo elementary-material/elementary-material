@@ -1,0 +1,53 @@
+/*!
+ * This file contains rules of general components as cards, inputs and etc
+ *
+ * Author: Matheus Alexandre de Sena (@matthsena) 
+ * Elementary Grid vAlfa 
+ * Licensed under MIT (https://github.com/matthsena/elementary-grid/blob/master/LICENSE)
+ */
+
+
+/*!
+ * Input elements
+ */
+.text-field {
+    width: 100%;
+    outline: none;
+    padding: 5px 0px;
+    margin: 5px 0px;
+    font-size: 16px;
+    background: transparent;
+    border-bottom: 2px solid var(--grey);
+}
+
+.text-field:focus,
+.text-field:active {
+    transition: border-color .4s linear;
+    border-bottom: 2px solid var(--indigo);
+}
+
+
+/*!
+* Card component
+*/
+div.card {
+    box-shadow: 1px 1px 2px var(--strong-grey);
+    padding: 15px;
+    background: var(--almost-white);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.fixed-bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
