@@ -5,6 +5,25 @@
  * Elementary Grid vAlfa 
  * Licensed under MIT (https://github.com/matthsena/elementary-grid/blob/master/LICENSE)
  */
+
+/*!
+ * Col width variables
+ */
+:root {
+    --first: calc(100% / 12);
+    --second: calc(100% / (12 / 2));
+    --third: calc(100% / (12 / 3));
+    --fourth: calc(100% / (12 / 4));
+    --fifth: calc(100% / (12 / 5));
+    --sixth: calc(100% / (12 / 6));
+    --seventh: calc(100% / (12 / 7));
+    --eighth: calc(100% / (12 / 8));
+    --ninth: calc(100% / (12 / 9));
+    --tenth: calc(100% / (12 / 10));
+    --eleventh: calc(100% / (12 / 11));
+    --twelfth: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -14,22 +33,14 @@
     border: none;
 }
 
-html {
-    width: 100%;
-    color: var(--strong-grey);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background: var(--really-light-grey);
-}
-
-/*!
- * Content
- */
+html,
 .content {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
+}
+
+.content {
     padding: 0 15px
 }
 
@@ -63,75 +74,75 @@ body {
  */
 @media (min-width: 768px) {
     .col.md-1 {
-        -ms-flex: 0 0 calc(100% / 12);
-        flex: 0 0 calc(100% / 12);
-        max-width: calc(100% / 12)
+        -ms-flex: 0 0 var(--first);
+        flex: 0 0 var(--first);
+        max-width: var(--first)
     }
 
     .col.md-2 {
-        -ms-flex: 0 0 calc(100% / (12 / 2));
-        flex: 0 0 calc(100% / (12 / 2));
-        max-width: calc(100% / (12 / 2))
+        -ms-flex: 0 0 var(--second);
+        flex: 0 0 var(--second);
+        max-width: var(--second)
     }
 
     .col.md-3 {
-        -ms-flex: 0 0 calc(100% / (12 / 3));
-        flex: 0 0 calc(100% / (12 / 3));
-        max-width: calc(100% / (12 / 3))
+        -ms-flex: 0 0 var(--third);
+        flex: 0 0 var(--third);
+        max-width: var(--third)
     }
 
     .col.md-4 {
-        -ms-flex: 0 0 calc(100% / (12 / 4));
-        flex: 0 0 calc(100% / (12 / 4));
-        max-width: calc(100% / (12 / 4))
+        -ms-flex: 0 0 var(--fourth);
+        flex: 0 0 var(--fourth);
+        max-width: var(--fourth)
     }
 
     .col.md-5 {
-        -ms-flex: 0 0 calc(100% / (12 / 5));
-        flex: 0 0 calc(100% / (12 / 5));
-        max-width: calc(100% / (12 / 5))
+        -ms-flex: 0 0 var(--fifth);
+        flex: 0 0 var(--fifth);
+        max-width: var(--fifth)
     }
 
     .col.md-6 {
-        -ms-flex: 0 0 calc(100% / (12 / 6));
-        flex: 0 0 calc(100% / (12 / 6));
-        max-width: calc(100% / (12 / 6))
+        -ms-flex: 0 0 var(--sixth);
+        flex: 0 0 var(--sixth);
+        max-width: var(--sixth)
     }
 
     .col.md-7 {
-        -ms-flex: 0 0 calc(100% / (12 / 7));
-        flex: 0 0 calc(100% / (12 / 7));
-        max-width: calc(100% / (12 / 7))
+        -ms-flex: 0 0 var(--seventh);
+        flex: 0 0 var(--seventh);
+        max-width: var(--seventh)
     }
 
     .col.md-8 {
-        -ms-flex: 0 0 calc(100% / (12 / 8));
-        flex: 0 0 calc(100% / (12 / 8));
-        max-width: calc(100% / (12 / 8))
+        -ms-flex: 0 0 var(--eighth);
+        flex: 0 0 var(--eighth);
+        max-width: var(--eighth)
     }
 
     .col.md-9 {
-        -ms-flex: 0 0 calc(100% / (12 / 9));
-        flex: 0 0 calc(100% / (12 / 9));
-        max-width: calc(100% / (12 / 9))
+        -ms-flex: 0 0 var(--ninth);
+        flex: 0 0 var(--ninth);
+        max-width: var(--ninth)
     }
 
     .col.md-10 {
-        -ms-flex: 0 0 calc(100% / (12 / 10));
-        flex: 0 0 calc(100% / (12 / 10));
-        max-width: calc(100% / (12 / 10))
+        -ms-flex: 0 0 var(--tenth);
+        flex: 0 0 var(--tenth);
+        max-width: var(--tenth)
     }
 
     .col.md-11 {
-        -ms-flex: 0 0 calc(100% / (12 / 11));
-        flex: 0 0 calc(100% / (12 / 11));
-        max-width: calc(100% / (12 / 11))
+        -ms-flex: 0 0 var(--eleventh);
+        flex: 0 0 var(--eleventh);
+        max-width: var(--eleventh)
     }
 
     .col.md-12 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%
+        -ms-flex: 0 0 var(--twelfth);
+        flex: 0 0 var(--twelfth);
+        max-width: var(--twelfth)
     }
 }
 
@@ -140,75 +151,75 @@ body {
  */
 @media (min-width: 576px) and (max-width: 768px) {
     .col.sm-1 {
-        -ms-flex: 0 0 calc(100% / 12);
-        flex: 0 0 calc(100% / 12);
-        max-width: calc(100% / 12)
+        -ms-flex: 0 0 var(--first);
+        flex: 0 0 var(--first);
+        max-width: var(--first)
     }
 
     .col.sm-2 {
-        -ms-flex: 0 0 calc(100% / (12 / 2));
-        flex: 0 0 calc(100% / (12 / 2));
-        max-width: calc(100% / (12 / 2))
+        -ms-flex: 0 0 var(--second);
+        flex: 0 0 var(--second);
+        max-width: var(--second)
     }
 
     .col.sm-3 {
-        -ms-flex: 0 0 calc(100% / (12 / 3));
-        flex: 0 0 calc(100% / (12 / 3));
-        max-width: calc(100% / (12 / 3))
+        -ms-flex: 0 0 var(--third);
+        flex: 0 0 var(--third);
+        max-width: var(--third)
     }
 
     .col.sm-4 {
-        -ms-flex: 0 0 calc(100% / (12 / 4));
-        flex: 0 0 calc(100% / (12 / 4));
-        max-width: calc(100% / (12 / 4))
+        -ms-flex: 0 0 var(--fourth);
+        flex: 0 0 var(--fourth);
+        max-width: var(--fourth)
     }
 
     .col.sm-5 {
-        -ms-flex: 0 0 calc(100% / (12 / 5));
-        flex: 0 0 calc(100% / (12 / 5));
-        max-width: calc(100% / (12 / 5))
+        -ms-flex: 0 0 var(--fifth);
+        flex: 0 0 var(--fifth);
+        max-width: var(--fifth)
     }
 
     .col.sm-6 {
-        -ms-flex: 0 0 calc(100% / (12 / 6));
-        flex: 0 0 calc(100% / (12 / 6));
-        max-width: calc(100% / (12 / 6))
+        -ms-flex: 0 0 var(--sixth);
+        flex: 0 0 var(--sixth);
+        max-width: var(--sixth)
     }
 
     .col.sm-7 {
-        -ms-flex: 0 0 calc(100% / (12 / 7));
-        flex: 0 0 calc(100% / (12 / 7));
-        max-width: calc(100% / (12 / 7))
+        -ms-flex: 0 0 var(--seventh);
+        flex: 0 0 var(--seventh);
+        max-width: var(--seventh)
     }
 
     .col.sm-8 {
-        -ms-flex: 0 0 calc(100% / (12 / 8));
-        flex: 0 0 calc(100% / (12 / 8));
-        max-width: calc(100% / (12 / 8))
+        -ms-flex: 0 0 var(--eighth);
+        flex: 0 0 var(--eighth);
+        max-width: var(--eighth)
     }
 
     .col.sm-9 {
-        -ms-flex: 0 0 calc(100% / (12 / 9));
-        flex: 0 0 calc(100% / (12 / 9));
-        max-width: calc(100% / (12 / 9))
+        -ms-flex: 0 0 var(--ninth);
+        flex: 0 0 var(--ninth);
+        max-width: var(--ninth)
     }
 
     .col.sm-10 {
-        -ms-flex: 0 0 calc(100% / (12 / 10));
-        flex: 0 0 calc(100% / (12 / 10));
-        max-width: calc(100% / (12 / 10))
+        -ms-flex: 0 0 var(--tenth);
+        flex: 0 0 var(--tenth);
+        max-width: var(--tenth)
     }
 
     .col.sm-11 {
-        -ms-flex: 0 0 calc(100% / (12 / 11));
-        flex: 0 0 calc(100% / (12 / 11));
-        max-width: calc(100% / (12 / 11))
+        -ms-flex: 0 0 var(--eleventh);
+        flex: 0 0 var(--eleventh);
+        max-width: var(--eleventh)
     }
 
     .col.sm-12 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%
+        -ms-flex: 0 0 var(--twelfth);
+        flex: 0 0 var(--twelfth);
+        max-width: var(--twelfth)
     }
 }
 
@@ -217,74 +228,74 @@ body {
  */
 @media (max-width: 576px) {
     .col.xs-1 {
-        -ms-flex: 0 0 calc(100% / 12);
-        flex: 0 0 calc(100% / 12);
-        max-width: calc(100% / 12)
+        -ms-flex: 0 0 var(--first);
+        flex: 0 0 var(--first);
+        max-width: var(--first)
     }
 
     .col.xs-2 {
-        -ms-flex: 0 0 calc(100% / (12 / 2));
-        flex: 0 0 calc(100% / (12 / 2));
-        max-width: calc(100% / (12 / 2))
+        -ms-flex: 0 0 var(--second);
+        flex: 0 0 var(--second);
+        max-width: var(--second)
     }
 
     .col.xs-3 {
-        -ms-flex: 0 0 calc(100% / (12 / 3));
-        flex: 0 0 calc(100% / (12 / 3));
-        max-width: calc(100% / (12 / 3))
+        -ms-flex: 0 0 var(--third);
+        flex: 0 0 var(--third);
+        max-width: var(--third)
     }
 
     .col.xs-4 {
-        -ms-flex: 0 0 calc(100% / (12 / 4));
-        flex: 0 0 calc(100% / (12 / 4));
-        max-width: calc(100% / (12 / 4))
+        -ms-flex: 0 0 var(--fourth);
+        flex: 0 0 var(--fourth);
+        max-width: var(--fourth)
     }
 
     .col.xs-5 {
-        -ms-flex: 0 0 calc(100% / (12 / 5));
-        flex: 0 0 calc(100% / (12 / 5));
-        max-width: calc(100% / (12 / 5))
+        -ms-flex: 0 0 var(--fifth);
+        flex: 0 0 var(--fifth);
+        max-width: var(--fifth)
     }
 
     .col.xs-6 {
-        -ms-flex: 0 0 calc(100% / (12 / 6));
-        flex: 0 0 calc(100% / (12 / 6));
-        max-width: calc(100% / (12 / 6))
+        -ms-flex: 0 0 var(--sixth);
+        flex: 0 0 var(--sixth);
+        max-width: var(--sixth)
     }
 
     .col.xs-7 {
-        -ms-flex: 0 0 calc(100% / (12 / 7));
-        flex: 0 0 calc(100% / (12 / 7));
-        max-width: calc(100% / (12 / 7))
+        -ms-flex: 0 0 var(--seventh);
+        flex: 0 0 var(--seventh);
+        max-width: var(--seventh)
     }
 
     .col.xs-8 {
-        -ms-flex: 0 0 calc(100% / (12 / 8));
-        flex: 0 0 calc(100% / (12 / 8));
-        max-width: calc(100% / (12 / 8))
+        -ms-flex: 0 0 var(--eighth);
+        flex: 0 0 var(--eighth);
+        max-width: var(--eighth)
     }
 
     .col.xs-9 {
-        -ms-flex: 0 0 calc(100% / (12 / 9));
-        flex: 0 0 calc(100% / (12 / 9));
-        max-width: calc(100% / (12 / 9))
+        -ms-flex: 0 0 var(--ninth);
+        flex: 0 0 var(--ninth);
+        max-width: var(--ninth)
     }
 
     .col.xs-10 {
-        -ms-flex: 0 0 calc(100% / (12 / 10));
-        flex: 0 0 calc(100% / (12 / 10));
-        max-width: calc(100% / (12 / 10))
+        -ms-flex: 0 0 var(--tenth);
+        flex: 0 0 var(--tenth);
+        max-width: var(--tenth)
     }
 
     .col.xs-11 {
-        -ms-flex: 0 0 calc(100% / (12 / 11));
-        flex: 0 0 calc(100% / (12 / 11));
-        max-width: calc(100% / (12 / 11))
+        -ms-flex: 0 0 var(--eleventh);
+        flex: 0 0 var(--eleventh);
+        max-width: var(--eleventh)
     }
 
     .col.xs-12 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%
+        -ms-flex: 0 0 var(--twelfth);
+        flex: 0 0 var(--twelfth);
+        max-width: var(--twelfth)
     }
 }

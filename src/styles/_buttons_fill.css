@@ -5,14 +5,13 @@
  * Elementary Grid vAlfa 
  * Licensed under MIT (https://github.com/matthsena/elementary-grid/blob/master/LICENSE)
  */
-/*!
-* Buttons
-*/
+
 .btn {
     max-height: auto;
     padding: 10px;
     font-size: 15px;
-    box-shadow: 1px 1px 2px var(--strong-grey)
+    font-weight: bold;
+    box-shadow: 1px 1px 2px 1px var(--grey);
 }
 
 .btn:active,
@@ -23,6 +22,7 @@
 .btn:hover {
     transition: all .3s linear;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 /*!
@@ -32,230 +32,125 @@
 /* red */
 .red {
     background: var(--red);
-    color: var(--strong-grey);
-}
-
-.btn.red:hover {
-    background: var(--strong-grey);
-    color: var(--red);
+    color: var(--black);
 }
 
 /*pink*/
 .pink {
     background: var(--pink);
-    color: var(--strong-grey);
-}
-
-.btn.pink:hover {
-    background: var(--strong-grey);
-    color: var(--pink);
+    color: var(--black);
 }
 
 /*purple*/
 .purple {
     background: var(--purple);
-    color: var(--almost-white);
-}
-
-.btn.purple:hover {
-    background: var(--almost-white);
-    color: var(--purple);
+    color: var(--white);
 }
 
 /*deep purple*/
 .deep-purple {
     background: var(--deep-purple);
-    color: var(--almost-white);
-}
-
-.btn.deep-purple:hover {
-    background: var(--almost-white);
-    color: var(--deep-purple);
+    color: var(--white);
 }
 
 /*indigo*/
 .indigo {
     background: var(--indigo);
-    color: var(--almost-white);
-}
-
-.btn.indigo:hover {
-    background: var(--almost-white);
-    color: var(--indigo);
+    color: var(--white);
 }
 
 /*blue*/
 .blue {
     background: var(--blue);
-    color: var(--almost-white);
-}
-
-.btn.blue:hover {
-    background: var(--almost-white);
-    color: var(--blue);
+    color: var(--black);
 }
 
 /*light-blue*/
 .light-blue {
     background: var(--light-blue);
-    color: var(--almost-white);
-}
-
-.btn.light-blue:hover {
-    background: var(--almost-white);
-    color: var(--light-blue);
+    color: var(--black);
 }
 
 /*cyan*/
 .cyan {
     background: var(--cyan);
-    color: var(--strong-grey);
-}
-
-.btn.cyan:hover {
-    background: var(--strong-grey);
-    color: var(--cyan);
+    color: var(--black);
 }
 
 /*teal*/
 .teal {
     background: var(--teal);
-    color: var(--strong-grey);
-}
-
-.btn.teal:hover {
-    background: var(--strong-grey);
-    color: var(--teal);
+    color: var(--black);
 }
 
 /*green*/
 .green {
     background: var(--green);
-    color: var(--strong-grey);
-}
-
-.btn.green:hover {
-    background: var(--strong-grey);
-    color: var(--green);
+    color: var(--black);
 }
 
 /*light-green*/
 .light-green {
     background: var(--light-green);
-    color: var(--strong-grey);
-}
-
-.btn.light-green:hover {
-    background: var(--strong-grey);
-    color: var(--light-green);
+    color: var(--black);
 }
 
 /*lime*/
 .lime {
     background: var(--lime);
-    color: var(--strong-grey);
-}
-
-.btn.lime:hover {
-    background: var(--strong-grey);
-    color: var(--lime);
+    color: var(--black);
 }
 
 /*yellow*/
 .yellow {
     background: var(--yellow);
-    color: var(--strong-grey);
-}
-
-.btn.yellow:hover {
-    background: var(--strong-grey);
-    color: var(--yellow);
+    color: var(--black);
 }
 
 /*amber*/
 .amber {
     background: var(--amber);
-    color: var(--strong-grey);
-}
-
-.btn.amber:hover {
-    background: var(--strong-grey);
-    color: var(--amber);
+    color: var(--black);
 }
 
 /*orange*/
 .orange {
     background: var(--orange);
-    color: var(--strong-grey);
-}
-
-.btn.orange:hover {
-    background: var(--strong-grey);
-    color: var(--orange);
+    color: var(--black);
 }
 
 /*deep-orange*/
 .deep-orange {
     background: var(--deep-orange);
-    color: var(--almost-white);
-}
-
-.btn.deep-orange:hover {
-    background: var(--almost-white);
-    color: var(--deep-orange);
+    color: var(--black);
 }
 
 /*brown*/
 .brown {
     background: var(--brown);
-    color: var(--almost-white);
-}
-
-.btn.brown:hover {
-    background: var(--almost-white);
-    color: var(--brown);
+    color: var(--white);
 }
 
 /*grey*/
 .grey {
     background: var(--grey);
-    color: var(--strong-grey);
+    color: var(--black);
 }
 
-.btn.grey:hover {
-    background: var(--strong-grey);
-    color: var(--grey);
-}
-
-/*strong-grey*/
-.strong-grey {
-    background: var(--strong-grey);
-    color: var(--almost-white);
-}
-
-.btn.strong-grey:hover {
-    background: var(--almost-white);
-    color: var(--strong-grey);
+/*black*/
+.black {
+    background: var(--black);
+    color: var(--white);
 }
 
 /*blue-grey*/
 .blue-grey {
     background: var(--blue-grey);
-    color: var(--almost-white);
+    color: var(--black);
 }
 
-.btn.blue-grey:hover {
-    background: var(--almost-white);
-    color: var(--blue-grey);
-}
-
-/*almost-white*/
-.almost-white {
-    background: var(--almost-white);
-    color: var(--strong-grey);
-}
-
-.btn.almost-white:hover {
-    background: var(--strong-grey);
-    color: var(--almost-white);
+/*white*/
+.white {
+    background: var(--white);
+    color: var(--black);
 }
