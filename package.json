@@ -1,0 +1,23 @@
+{
+  "name": "elementary-grid",
+  "version": "1.0.0",
+  "description": "A forma mais simples de uma grid CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthsena/elementary-grid.git"
+  },
+  "author": "Matheus Alexandre de Sena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthsena/elementary-grid/issues"
+  },
+  "homepage": "https://github.com/matthsena/elementary-grid#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  }
+}
