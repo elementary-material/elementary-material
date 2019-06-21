@@ -27,16 +27,16 @@
     cursor: text;
     width: 100%;
     outline: none;
-    padding: 5px 5px;
+    padding: 5px 5px 6px 5px;
     margin: 5px 0px;
     font-size: 16px;
-    border-bottom: 2px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
 }
 
 .text-field:focus,
 .text-field:active {
-    outline: 0;
-    transition: border-color .4s linear;
+    padding: 5px 5px;
+    transition: all .4s linear;
     border-bottom: 2px solid var(--indigo);
 }
 
@@ -66,6 +66,7 @@
     font-weight: bold;
 }
 
+
 /*!
 * Card component
 */
@@ -79,7 +80,7 @@ div.card {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .fixed-bottom {
@@ -87,5 +88,5 @@ div.card {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
 }
