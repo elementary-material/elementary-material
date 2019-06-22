@@ -11,7 +11,7 @@
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
-    box-shadow: 1px 1px 2px 1px var(--grey);
+    box-shadow: 1px 1px 4px 0 var(--grey);
 }
 
 .btn:active,

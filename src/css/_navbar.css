@@ -1,0 +1,88 @@
+.header .nav-title {
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
+    padding: 15px 0;
+}
+.header {
+    width: 100vw;
+    height: 60px;
+    margin: 0 -15px;
+    z-index: 999;
+}
+
+.overlay {
+    opacity: 0;
+    background: #000;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    will-change: opacity;
+    transition: opacity 150ms ease;
+    pointer-events: none;
+    z-index: 998;
+}
+
+#btn-menu:checked+.hamburger-menu+.overlay {
+    opacity: 0.3;
+    pointer-events: auto;
+}
+
+
+
+.hamburger-menu {
+    height: 40px;
+    width: 40px;
+    margin: 10px 10px;
+    padding: 10px;
+    background: var(--grey);
+    float: left;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.menu {
+
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition: -webkit-transform 150ms ease-out;
+    transition: transform 150ms ease-out;
+    transition: transform 150ms ease-out, -webkit-transform 150ms ease-out;
+    background: #fff;
+    position: absolute;
+    min-width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 8px 16px;
+    z-index: 9999;
+}
+
+#btn-menu:checked+.hamburger-menu+.overlay+.menu {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-list {
+    padding: 8px 0;
+    margin: 0;
+}
+
+.nav-list .nav-link {
+    display: block;
+    margin: 0;
+    padding: 16px 16px;
+    font-size: 18px;
+    color: var(--black)
+}
+
+
+
+

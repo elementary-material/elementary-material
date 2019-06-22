@@ -7,31 +7,34 @@
     <meta name="Description" content="This is an sample of this framework power, it's responsive and really beauty">
     <title>All components sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/_colors.css">
-    <link rel="stylesheet" href="../styles/_grids.css">
-    <link rel="stylesheet" href="../styles/_buttons_fill.css">
-    <link rel="stylesheet" href="../styles/_navbar.css">
-    <link rel="stylesheet" href="../styles/_general-components.css">
+    <link rel="stylesheet" href="../css/_colors.css">
+    <link rel="stylesheet" href="../css/_grids.css">
+    <link rel="stylesheet" href="../css/_buttons_fill.css">
+    <link rel="stylesheet" href="../css/_navbar.css">
+    <link rel="stylesheet" href="../css/_general-components.css">
 </head>
 
 <body>
     <div class="content">
-        <div class="navbar">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-                <div class="nav-title">
-                    Elementary
-                </div>
+
+        <header class="header red">
+            <h1 class="nav-title">Menu</h1>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="hamburger-menu ripple"></label>
+            <div class="overlay"></div>
+            <div class="menu">
+                <ul class="nav-list">
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                    <li class="nav-link">Lorem Ipsum</li>
+                </ul>
             </div>
-            <div class="nav-btn">
-                <label for="nav-check"></label>
-            </div>
-            <div class="nav-links">
-                <a class="nav-item">Opt 1</a>
-                <a class="nav-item">Opt 2</a>
-                <a class="nav-item">Opt 3</a>
-            </div>
-        </div>
+        </header>
+
         <div class="row">
             <div class="col md-3 sm-6 xs-12">
                 <div class="field">
