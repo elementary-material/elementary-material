@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body,
+.content {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+}
+
+/* Placeholder */
+.text-field:placeholder-shown+.place-holder,
+.text-field:not(:placeholder-shown)+.place-holder,
+.text-field:focus+.place-holder {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+
+h1 {
+    font-size: 34px;
+    letter-spacing: 0.25px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 0px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 8px;
+    line-height: 1.2px;
+}

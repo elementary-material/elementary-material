@@ -1,6 +1,7 @@
 .header {
     width: 100vw;
     height: 60px;
+    line-height: 60px;
     margin: 0 -15px;
     z-index: 999;
     box-shadow: 1px 1px 4px 0 var(--grey);
@@ -11,32 +12,39 @@
 }
 
 .header .nav-title {
-    font-size: 30px;
-    padding: 15px 0;
+    padding: 26px;
+    height: 38px;
 }
 
 @media(min-width: 769px) {
     .header .nav-title {
         margin: 0 25px;
         position: absolute;
-        top: 0;
+        top: 0px;
     }
 
     .menu {
-        padding: 20px;
-        margin: 0 0 0 10%;
+        padding: 0 25px;
+        margin: 0 0 0 15%;
     }
 
     .nav-list .nav-link {
-        font-size: 20px;
-        display: inline;
-        margin: 0 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 25px;
         overflow: hidden;
     }
 
-    .nav-list .nav-link:hover {
+    .nav-list .nav-link:hover,
+    .header .nav-title:hover {
         cursor: pointer;
-        opacity: 0.8;
+    }
+
+    .nav-list .nav-link:hover {
+        transition: color .4s linear;
+
+        color: var(--black);
+
     }
 }
 
@@ -111,7 +119,6 @@
         display: block;
         margin: 0;
         padding: 16px 16px;
-        font-size: 18px;
         color: var(--black)
     }
 }

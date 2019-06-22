@@ -29,7 +29,6 @@
     outline: none;
     padding: 5px 5px 6px 5px;
     margin: 5px 0px;
-    font-size: 16px;
     border-bottom: 1px solid var(--grey);
 }
 
@@ -43,7 +42,6 @@
 .text-field:placeholder-shown+.place-holder {
     cursor: text;
     color: var(--grey);
-    font-size: 12px;
     overflow: hidden;
     transform-origin: left bottom;
     transform: translate(0, 2.125rem) scale(1.5);
@@ -61,9 +59,7 @@
 .text-field:not(:placeholder-shown)+.place-holder,
 .text-field:focus+.place-holder {
     transform: translate(0, 0) scale(1);
-    font-size: 12px;
     color: var(--indigo);
-    font-weight: bold;
 }
 
 
