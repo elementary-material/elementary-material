@@ -4,6 +4,7 @@ window.onload = (() => {
 
     const overlay = document.getElementById("overlay")
     const navigations = document.getElementsByClassName("nav-link")
+    
 
     overlay.addEventListener('click', () => {
         closeNav()
@@ -16,5 +17,4 @@ window.onload = (() => {
     function closeNav() {
         document.getElementById("btn-menu").checked = false
     }
-
 })

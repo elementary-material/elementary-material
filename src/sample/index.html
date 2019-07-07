@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="_style.css">
     <script src="../js/_navbar.js"></script>
+    <script src="../js/_modal.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,6 @@
                 </ul>
             </div>
             <h1 class="nav-title">Menu</h1>
-
         </header>
 
         <div class="row">
@@ -66,6 +66,10 @@
             </div>
             <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
         </div>
+        <div class="modal" data-status="hidden" data-modal="modalName">
+            <div class="modal-content"></div>
+        </div>
+        <button class="btn blue-grey ripple modal-trigger" data-modal="modalName">Open modal</button>
     </div>
     <style>
         button {
