@@ -1,0 +1,50 @@
+[data-status="hidden"] {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+}
+
+[data-status="show"] {
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s;
+}
+
+.modal,
+.modal-content {
+    z-index: 9999;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0px 1px 3px 0px var(--grey); /* 1 DP AMBIENTE */
+}
+
+@media(min-width: 769px) {
+
+    .modal-content {
+        width: 65vw;
+        height: 65vh;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .modal-content {
+        width: 90vw;
+        height: 50vh;
+    }
+}
