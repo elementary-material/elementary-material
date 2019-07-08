@@ -5,6 +5,7 @@
     margin: 0 -15px;
     z-index: 999;
     box-shadow: 0px 1px 10px 0px var(--grey); /* 4 DP AMBIENTE */
+    overflow: hidden;
 }
 
 #btn-menu {

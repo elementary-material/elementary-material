@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="_style.css">
     <script src="../js/_navbar.js"></script>
     <script src="../js/_modal.js"></script>
+    <script src="../js/_gallery.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,6 @@
             </div>
             <h1 class="nav-title">Menu</h1>
         </header>
-
         <div class="row">
             <div class="col md-3 sm-6 xs-12">
                 <div class="field">
@@ -66,17 +66,25 @@
             </div>
             <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
         </div>
+        <div class="row">
+            <div class="col md-12 sm-12 xs-12">
+                <div class="gallery g-md-5 g-sm-4 g-xs-2 slider">
+                    <img src="imgs/01.jpg" class="img" data-image="top">
+                    <img src="imgs/02.jpg" class="img" data-image="normal">
+                    <img src="imgs/03.jpg" class="img" data-image="normal">
+                    <img src="imgs/04.jpg" class="img" data-image="normal">
+                    <img src="imgs/05.jpg" class="img" data-image="normal">
+                </div>
+            </div>
+        </div>
+        <br>
         <div class="modal" data-status="hidden" data-modal="modalName">
-            <div class="modal-content"></div>
+            <div class="modal-content">
+                <span class="modal-close"></span>
+            </div>
         </div>
         <button class="btn blue-grey ripple modal-trigger" data-modal="modalName">Open modal</button>
     </div>
-    <style>
-        button {
-            margin: 2px;
-        }
-    </style>
-
 </body>
 
 </html>
