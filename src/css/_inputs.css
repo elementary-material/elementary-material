@@ -21,15 +21,16 @@
     width: 100%;
     outline: none;
     padding: 15px;
-    margin:  0;
-    border-bottom: 1px solid #9e9e9e;
+    margin: 0;
+    border-bottom: 1px solid rgb(142, 142, 142);
     font-size: 16px;
     background: rgb(232, 232, 232);
     border-radius: 5px 5px 0 0;
 }
+
 .text-field.outlined {
     background: #fff;
-    border: 1px solid #9e9e9e;
+    border: 1px solid rgb(142, 142, 142);
     border-radius: 5px;
 }
 
@@ -37,18 +38,18 @@
 .text-field:active {
     padding-top: 14px;
     transition: all .4s linear;
-    border-bottom: 2px solid var(--indigo);
+    border-bottom: 2px solid #000;
 }
 
 .text-field.outlined:focus,
 .text-field.outlined:active {
     padding: 14px;
-    border: 2px solid var(--indigo)
+    border: 2px solid #000
 }
 
 .text-field:placeholder-shown+.place-holder {
     cursor: text;
-    color: #9e9e9e;
+    color: rgb(142, 142, 142);
     overflow: hidden;
     transform-origin: left bottom;
     transform: translate(10px, 35px) scale(1.5);
@@ -66,5 +67,5 @@
 .text-field:not(:placeholder-shown)+.place-holder,
 .text-field:focus+.place-holder {
     transform: translate(0, 0) scale(1);
-    color: var(--indigo);
+    color: #000;
 }
