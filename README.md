@@ -14,7 +14,7 @@
 - [ ] Navbar
 - [ ] Typography
 
-### Grids 
+## Grids 
 
 > This is the simplest component, it divides the layout into 12 columns.
 
