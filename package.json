@@ -17,16 +17,15 @@
     "url": "https://github.com/matthsena/elementary-grid/issues"
   },
   "homepage": "https://github.com/matthsena/elementary-grid#readme",
-  "dependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-jsmin": "^0.1.5"
-  },
-  "devDependencies": {
     "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jsmin": "^0.1.5",
     "stylelint": "^11.1.1"
   }
 }
