@@ -6,11 +6,6 @@ body,
     font-family: 'Roboto', sans-serif;
 }
 
-.btn {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.25px;
-}
 
 /* Placeholder */
 .text-field:placeholder-shown+.place-holder,
