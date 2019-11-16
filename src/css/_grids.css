@@ -5,24 +5,6 @@
     * Elementary Grid vAlfa 
     * Licensed under MIT (https://github.com/matthsena/elementary-grid/blob/master/LICENSE)
     */
-    /*!
-    * Col width variables
-    */
-    :root {
-        --first: calc(100% / 12);
-        --second: calc(100% / (12 / 2));
-        --third: calc(100% / (12 / 3));
-        --fourth: calc(100% / (12 / 4));
-        --fifth: calc(100% / (12 / 5));
-        --sixth: calc(100% / (12 / 6));
-        --seventh: calc(100% / (12 / 7));
-        --eighth: calc(100% / (12 / 8));
-        --ninth: calc(100% / (12 / 9));
-        --tenth: calc(100% / (12 / 10));
-        --eleventh: calc(100% / (12 / 11));
-        --twelfth: 100%;
-    }
-
     *,
     *::before,
     *::after {
@@ -74,75 +56,75 @@
     */
     @media (min-width: 769px) {
         .col.md-1 {
-            -ms-flex: 0 0 var(--first);
-            flex: 0 0 var(--first);
-            max-width: var(--first)
+            -ms-flex: 0 0 8.3333%;
+            flex: 0 0 8.3333%;
+            max-width: 8.3333%
         }
 
         .col.md-2 {
-            -ms-flex: 0 0 var(--second);
-            flex: 0 0 var(--second);
-            max-width: var(--second)
+            -ms-flex: 0 0 16.6667%;
+            flex: 0 0 16.6667%;
+            max-width: 16.6667%
         }
 
         .col.md-3 {
-            -ms-flex: 0 0 var(--third);
-            flex: 0 0 var(--third);
-            max-width: var(--third)
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%
         }
 
         .col.md-4 {
-            -ms-flex: 0 0 var(--fourth);
-            flex: 0 0 var(--fourth);
-            max-width: var(--fourth)
+            -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%
         }
 
         .col.md-5 {
-            -ms-flex: 0 0 var(--fifth);
-            flex: 0 0 var(--fifth);
-            max-width: var(--fifth)
+            -ms-flex: 0 0 41.6667%;
+            flex: 0 0 41.6667%;
+            max-width: 41.6667%
         }
 
         .col.md-6 {
-            -ms-flex: 0 0 var(--sixth);
-            flex: 0 0 var(--sixth);
-            max-width: var(--sixth)
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%
         }
 
         .col.md-7 {
-            -ms-flex: 0 0 var(--seventh);
-            flex: 0 0 var(--seventh);
-            max-width: var(--seventh)
+            -ms-flex: 0 0 58.3333%;
+            flex: 0 0 58.3333%;
+            max-width: 58.3333%
         }
 
         .col.md-8 {
-            -ms-flex: 0 0 var(--eighth);
-            flex: 0 0 var(--eighth);
-            max-width: var(--eighth)
+            -ms-flex: 0 0 66.6667%;
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%
         }
 
         .col.md-9 {
-            -ms-flex: 0 0 var(--ninth);
-            flex: 0 0 var(--ninth);
-            max-width: var(--ninth)
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%
         }
 
         .col.md-10 {
-            -ms-flex: 0 0 var(--tenth);
-            flex: 0 0 var(--tenth);
-            max-width: var(--tenth)
+            -ms-flex: 0 0 83.3333%;
+            flex: 0 0 83.3333%;
+            max-width: 83.3333%
         }
 
         .col.md-11 {
-            -ms-flex: 0 0 var(--eleventh);
-            flex: 0 0 var(--eleventh);
-            max-width: var(--eleventh)
+            -ms-flex: 0 0 91.6667%;
+            flex: 0 0 91.6667%;
+            max-width: 91.6667%
         }
 
         .col.md-12 {
-            -ms-flex: 0 0 var(--twelfth);
-            flex: 0 0 var(--twelfth);
-            max-width: var(--twelfth)
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%
         }
     }
 
@@ -151,75 +133,75 @@
     */
     @media (min-width: 576px) and (max-width: 768px) {
         .col.sm-1 {
-            -ms-flex: 0 0 var(--first);
-            flex: 0 0 var(--first);
-            max-width: var(--first)
+            -ms-flex: 0 0 8.3333%;
+            flex: 0 0 8.3333%;
+            max-width: 8.3333%
         }
 
         .col.sm-2 {
-            -ms-flex: 0 0 var(--second);
-            flex: 0 0 var(--second);
-            max-width: var(--second)
+            -ms-flex: 0 0 16.6667%;
+            flex: 0 0 16.6667%;
+            max-width: 16.6667%
         }
 
         .col.sm-3 {
-            -ms-flex: 0 0 var(--third);
-            flex: 0 0 var(--third);
-            max-width: var(--third)
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%
         }
 
         .col.sm-4 {
-            -ms-flex: 0 0 var(--fourth);
-            flex: 0 0 var(--fourth);
-            max-width: var(--fourth)
+            -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%
         }
 
         .col.sm-5 {
-            -ms-flex: 0 0 var(--fifth);
-            flex: 0 0 var(--fifth);
-            max-width: var(--fifth)
+            -ms-flex: 0 0 41.6667%;
+            flex: 0 0 41.6667%;
+            max-width: 41.6667%
         }
 
         .col.sm-6 {
-            -ms-flex: 0 0 var(--sixth);
-            flex: 0 0 var(--sixth);
-            max-width: var(--sixth)
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%
         }
 
         .col.sm-7 {
-            -ms-flex: 0 0 var(--seventh);
-            flex: 0 0 var(--seventh);
-            max-width: var(--seventh)
+            -ms-flex: 0 0 58.3333%;
+            flex: 0 0 58.3333%;
+            max-width: 58.3333%
         }
 
         .col.sm-8 {
-            -ms-flex: 0 0 var(--eighth);
-            flex: 0 0 var(--eighth);
-            max-width: var(--eighth)
+            -ms-flex: 0 0 66.6667%;
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%
         }
 
         .col.sm-9 {
-            -ms-flex: 0 0 var(--ninth);
-            flex: 0 0 var(--ninth);
-            max-width: var(--ninth)
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%
         }
 
         .col.sm-10 {
-            -ms-flex: 0 0 var(--tenth);
-            flex: 0 0 var(--tenth);
-            max-width: var(--tenth)
+            -ms-flex: 0 0 83.3333%;
+            flex: 0 0 83.3333%;
+            max-width: 83.3333%
         }
 
         .col.sm-11 {
-            -ms-flex: 0 0 var(--eleventh);
-            flex: 0 0 var(--eleventh);
-            max-width: var(--eleventh)
+            -ms-flex: 0 0 91.6667%;
+            flex: 0 0 91.6667%;
+            max-width: 91.6667%
         }
 
         .col.sm-12 {
-            -ms-flex: 0 0 var(--twelfth);
-            flex: 0 0 var(--twelfth);
-            max-width: var(--twelfth)
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%
         }
     }
 
@@ -228,74 +210,74 @@
     */
     @media (max-width: 576px) {
         .col.xs-1 {
-            -ms-flex: 0 0 var(--first);
-            flex: 0 0 var(--first);
-            max-width: var(--first)
+            -ms-flex: 0 0 8.3333%;
+            flex: 0 0 8.3333%;
+            max-width: 8.3333%
         }
 
         .col.xs-2 {
-            -ms-flex: 0 0 var(--second);
-            flex: 0 0 var(--second);
-            max-width: var(--second)
+            -ms-flex: 0 0 16.6667%;
+            flex: 0 0 16.6667%;
+            max-width: 16.6667%
         }
 
         .col.xs-3 {
-            -ms-flex: 0 0 var(--third);
-            flex: 0 0 var(--third);
-            max-width: var(--third)
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%
         }
 
         .col.xs-4 {
-            -ms-flex: 0 0 var(--fourth);
-            flex: 0 0 var(--fourth);
-            max-width: var(--fourth)
+            -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+            max-width: 33.3333%
         }
 
         .col.xs-5 {
-            -ms-flex: 0 0 var(--fifth);
-            flex: 0 0 var(--fifth);
-            max-width: var(--fifth)
+            -ms-flex: 0 0 41.6667%;
+            flex: 0 0 41.6667%;
+            max-width: 41.6667%
         }
 
         .col.xs-6 {
-            -ms-flex: 0 0 var(--sixth);
-            flex: 0 0 var(--sixth);
-            max-width: var(--sixth)
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%
         }
 
         .col.xs-7 {
-            -ms-flex: 0 0 var(--seventh);
-            flex: 0 0 var(--seventh);
-            max-width: var(--seventh)
+            -ms-flex: 0 0 58.3333%;
+            flex: 0 0 58.3333%;
+            max-width: 58.3333%
         }
 
         .col.xs-8 {
-            -ms-flex: 0 0 var(--eighth);
-            flex: 0 0 var(--eighth);
-            max-width: var(--eighth)
+            -ms-flex: 0 0 66.6667%;
+            flex: 0 0 66.6667%;
+            max-width: 66.6667%
         }
 
         .col.xs-9 {
-            -ms-flex: 0 0 var(--ninth);
-            flex: 0 0 var(--ninth);
-            max-width: var(--ninth)
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%
         }
 
         .col.xs-10 {
-            -ms-flex: 0 0 var(--tenth);
-            flex: 0 0 var(--tenth);
-            max-width: var(--tenth)
+            -ms-flex: 0 0 83.3333%;
+            flex: 0 0 83.3333%;
+            max-width: 83.3333%
         }
 
         .col.xs-11 {
-            -ms-flex: 0 0 var(--eleventh);
-            flex: 0 0 var(--eleventh);
-            max-width: var(--eleventh)
+            -ms-flex: 0 0 91.6667%;
+            flex: 0 0 91.6667%;
+            max-width: 91.6667%
         }
 
         .col.xs-12 {
-            -ms-flex: 0 0 var(--twelfth);
-            flex: 0 0 var(--twelfth);
-            max-width: var(--twelfth)
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%
         }
     }
