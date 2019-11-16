@@ -9,7 +9,7 @@
 - [ ] Card
 - [ ] Forms
 - [x] Grids
-- [ ] Inputs
+- [x] Inputs
 - [ ] Modals
 - [x] Navbar
 - [ ] Typography
@@ -74,4 +74,33 @@ Navbar by default is fixed on top and has a height of 60px
     </div>
     <h1 class="nav-title">Logo</h1>
 </header>
+```
+
+
+## Inputs
+
+Inputs has two types, filled and outlined, by default border color is black, you can change this with this config:
+
+``` css
+.text-field:focus,
+.text-field:active {    
+    border-color: red
+}
+
+```
+
+### Usage: 
+``` html
+
+/* filled */
+<div class="field">
+    <input id="name" class="text-field" placeholder="Type your name">
+    <label for="name" class="place-holder">Name</label>
+</div>
+
+/* outlined */
+<div class="field">
+    <input id="name2" class="text-field outlined" placeholder="Type your name">
+    <label for="name2" class="place-holder">Name</label>
+</div>
 ```
