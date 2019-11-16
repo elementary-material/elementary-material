@@ -9,6 +9,9 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
 }
 
 .btn:active,
@@ -26,145 +29,19 @@
     display: none;
     content: "";
     position: absolute;
-    border-radius: 50%;
+    border-radius: 100%;
     background: rgba(255, 255, 255, 0.6);
-    width: 100px;
-    height: 100px;
-    margin: -50px 0 0 -50px;
+    width: 100%;
+    height: 100%;
+    margin: -50% 0 0 -50%;
     top: 50%;
     left: 50%;
-    animation: ripple 1.5s;
+    animation: ripple 1s;
     opacity: 0;
 }
 
 .btn:not(:active)::after {
     display: block;
-}
-
-/* red */
-.red {
-    background: var(--red);
-    color: var(--black);
-}
-
-/*pink*/
-.pink {
-    background: var(--pink);
-    color: var(--black);
-}
-
-/*purple*/
-.purple {
-    background: var(--purple);
-    color: var(--white);
-}
-
-/*deep purple*/
-.deep-purple {
-    background: var(--deep-purple);
-    color: var(--white);
-}
-
-/*indigo*/
-.indigo {
-    background: var(--indigo);
-    color: var(--white);
-}
-
-/*blue*/
-.blue {
-    background: var(--blue);
-    color: var(--black);
-}
-
-/*light-blue*/
-.light-blue {
-    background: var(--light-blue);
-    color: var(--black);
-}
-
-/*cyan*/
-.cyan {
-    background: var(--cyan);
-    color: var(--black);
-}
-
-/*teal*/
-.teal {
-    background: var(--teal);
-    color: var(--black);
-}
-
-/*green*/
-.green {
-    background: var(--green);
-    color: var(--black);
-}
-
-/*light-green*/
-.light-green {
-    background: var(--light-green);
-    color: var(--black);
-}
-
-/*lime*/
-.lime {
-    background: var(--lime);
-    color: var(--black);
-}
-
-/*yellow*/
-.yellow {
-    background: var(--yellow);
-    color: var(--black);
-}
-
-/*amber*/
-.amber {
-    background: var(--amber);
-    color: var(--black);
-}
-
-/*orange*/
-.orange {
-    background: var(--orange);
-    color: var(--black);
-}
-
-/*deep-orange*/
-.deep-orange {
-    background: var(--deep-orange);
-    color: var(--black);
-}
-
-/*brown*/
-.brown {
-    background: var(--brown);
-    color: var(--white);
-}
-
-/*grey*/
-.grey {
-    background: var(--grey);
-    color: var(--black);
-}
-
-/*black*/
-.black {
-    background: var(--black);
-    color: var(--white);
-}
-
-/*blue-grey*/
-.blue-grey {
-    background: var(--blue-grey);
-    color: var(--black);
-}
-
-/*white*/
-.white {
-    background: var(--white);
-    color: var(--black);
 }
 
 @keyframes ripple {
