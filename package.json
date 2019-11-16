@@ -4,7 +4,8 @@
   "description": "A forma mais simples de uma grid CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-lint": "node node_modules/stylelint/bin/stylelint.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "gulp-jsmin": "^0.1.5"
   },
   "devDependencies": {
-    "gulp-clean-css": "^4.2.0"
+    "gulp-clean-css": "^4.2.0",
+    "stylelint": "^11.1.1"
   }
 }
