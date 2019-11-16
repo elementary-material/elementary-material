@@ -6,7 +6,7 @@
 - [ ] Alerts
 - [ ] Badge
 - [x] Buttons
-- [ ] Card
+- [x] Card
 - [ ] Forms
 - [x] Grids
 - [x] Inputs
@@ -102,5 +102,19 @@ Inputs has two types, filled and outlined, by default border color is black, you
 <div class="field">
     <input id="name2" class="text-field outlined" placeholder="Type your name">
     <label for="name2" class="place-holder">Name</label>
+</div>
+```
+
+## Cards
+
+Cards has only outlined option
+
+### Usage: 
+``` html
+ <div class="card">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et leo vitae neque eleifend maximus
+    eget eu purus. Nulla facilisi. Integer eu laoreet est, a lacinia ligula. Vivamus dictum, ex in
+    gravida posuere, enim ligula porta eros, iaculis vehicula erat sapien at libero. Mauris sit amet
+    vestibulum magna.
 </div>
 ```
