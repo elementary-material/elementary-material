@@ -4,14 +4,14 @@
  */
 .btn {
     max-height: auto;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 5px 0;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1.25px;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn:active,
