@@ -6,13 +6,6 @@ body,
 }
 
 
-/* Placeholder */
-.text-field:placeholder-shown+.place-holder,
-.text-field:not(:placeholder-shown)+.place-holder,
-.text-field:focus+.place-holder {
-    font-size: 12px;
-    letter-spacing: 0.4px;
-}
 
 
 h1 {
