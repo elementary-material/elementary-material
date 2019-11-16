@@ -103,17 +103,4 @@ Inputs has two types, filled and outlined, by default border color is black, you
     <input id="name2" class="text-field outlined" placeholder="Type your name">
     <label for="name2" class="place-holder">Name</label>
 </div>
-<header class="header black">
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu" class="hamburger-menu"></label>
-    <div class="overlay" id="overlay"></div>
-    <div class="menu">
-        <ul class="nav-list">
-            <li class="nav-link">Link 1</li>
-            <li class="nav-link">Link 2</li>
-            <li class="nav-link">Link 3</li>
-        </ul>
-    </div>
-    <h1 class="nav-title">Logo</h1>
-</header>
 ```
