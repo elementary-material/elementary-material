@@ -58,21 +58,19 @@
     }
 
     .overlay {
-        opacity: 0;
-        background: #000;
+        background: #0000009c;
         position: fixed;
         top: 60px;
         left: 0;
         right: 0;
         bottom: 0;
-        will-change: opacity;
-        transition: opacity .2s ease;
         z-index: 999;
+        display: none
     }
 
     #btn-menu:checked+.hamburger-menu+.overlay {
-        opacity: 0.6;
         pointer-events: auto;
+        display: inherit
     }
 
     #btn-menu:checked+.hamburger-menu {
