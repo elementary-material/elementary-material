@@ -1,6 +1,6 @@
 "use strict"
 
-window.onload = (() => {
+document.addEventListener("DOMContentLoaded", function(){
 
     const overlay = document.getElementById("overlay")
     const navigations = document.getElementsByClassName("nav-link")
@@ -20,4 +20,4 @@ window.onload = (() => {
     function closeNav() {
         document.getElementById("btn-menu").checked = false
     }
-})
+});
