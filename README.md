@@ -5,7 +5,7 @@
 ## Components (TODO)
 - [ ] Alerts
 - [ ] Badge
-- [ ] Buttons
+- [x] Buttons
 - [ ] Card
 - [ ] Forms
 - [x] Grids
@@ -25,7 +25,7 @@
    - **sm-**: sm is for devices with width greater than 576px and less than 768px, **usage:** *sm-{number of columns}
    - **xs-**: xs is for devices with width less than 576px, **usage:** *xs-{number of columns}*
 
-##### Sample: 
+### Usage: 
 ``` html
 <div class="container">
     <div class="row">
@@ -38,3 +38,19 @@
     </div>
 </div>
 ``` 
+## Buttons
+
+It's just beautiful buttons
+> **important:** all buttons are colorless, you'll want define a new class and customize yourself, like this: 
+``` css
+/* for example you put *black* class in the button */
+.black {
+    color: #FFFFFF; /* font color */
+    background: #000000; /* background color */
+}
+```
+
+### Usage:
+``` html
+    <button class="btn black">Click here</button>
+```
