@@ -1,0 +1,70 @@
+/*!
+ * This file contains all buttons and color fill rules
+ * Author: Matheus Alexandre de Sena (@matthsena) 
+ */
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.place-holder,
+.text-field {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+.place-holder {
+    font-size: 12px;
+}
+
+.text-field {
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    margin:  0;
+    border-bottom: 1px solid #9e9e9e;
+    font-size: 16px;
+    background: rgb(232, 232, 232);
+    border-radius: 5px 5px 0 0;
+}
+.text-field.outlined {
+    background: #fff;
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+}
+
+.text-field:focus,
+.text-field:active {
+    padding-top: 14px;
+    transition: all .4s linear;
+    border-bottom: 2px solid var(--indigo);
+}
+
+.text-field.outlined:focus,
+.text-field.outlined:active {
+    padding: 14px;
+    border: 2px solid var(--indigo)
+}
+
+.text-field:placeholder-shown+.place-holder {
+    cursor: text;
+    color: #9e9e9e;
+    overflow: hidden;
+    transform-origin: left bottom;
+    transform: translate(10px, 35px) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+.text-field:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+.text-field:not(:placeholder-shown)+.place-holder,
+.text-field:focus+.place-holder {
+    transform: translate(0, 0) scale(1);
+    color: var(--indigo);
+}
