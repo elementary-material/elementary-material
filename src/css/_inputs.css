@@ -15,7 +15,7 @@
 }
 
 .place-holder {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .text-field {
@@ -53,7 +53,7 @@
     color: rgb(142, 142, 142);
     overflow: hidden;
     transform-origin: left bottom;
-    transform: translate(10px, 35px) scale(1.5);
+    transform: translate(10px, 35px) scale(1.2);
 }
 
 ::-webkit-input-placeholder {
