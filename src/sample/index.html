@@ -7,17 +7,19 @@
     <meta name="Description" content="This is an sample of this framework power, it's responsive and really beauty">
     <title>All components sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="_style.css">
-    <script src="../js/_navbar.js"></script>
-    <script src="../js/_modal.js"></script>
-    <!-- <script src="../js/_gallery.js"></script> -->
+    <style>
+        .black {
+            background: rgb(197, 132, 132);
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
 
-        <header class="header indigo">
+        <header class="header black">
             <input type="checkbox" id="btn-menu">
             <label for="btn-menu" class="hamburger-menu"></label>
             <div class="overlay" id="overlay"></div>
@@ -48,6 +50,91 @@
             </div>
             <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
         </div>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name" class="text-field" placeholder="Type your name">
+                    <label for="name" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <div class="card"></div>
+            </div>
+            <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
+        </div>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name" class="text-field" placeholder="Type your name">
+                    <label for="name" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <div class="card"></div>
+            </div>
+            <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
+        </div>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name" class="text-field" placeholder="Type your name">
+                    <label for="name" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <div class="card"></div>
+            </div>
+            <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
+        </div>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name" class="text-field" placeholder="Type your name">
+                    <label for="name" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <div class="card"></div>
+            </div>
+            <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
+        </div>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name" class="text-field" placeholder="Type your name">
+                    <label for="name" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <div class="card"></div>
+            </div>
+            <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
+        </div>
         <br>
         <div class="modal" data-status="hidden" data-modal="modalName">
             <div class="modal-content">
@@ -56,6 +143,26 @@
         </div>
         <button class="btn blue-grey modal-trigger" data-modal="modalName">Open modal</button>
     </div>
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </noscript>
+    <script>
+        var loadDeferredStyles = function () {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function () {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script src="../js/_navbar.js"></script>
+    <script src="../js/_modal.js"></script>
 </body>
 
 </html>

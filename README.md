@@ -11,7 +11,7 @@
 - [x] Grids
 - [ ] Inputs
 - [ ] Modals
-- [ ] Navbar
+- [x] Navbar
 - [ ] Typography
 
 ## Grids 
@@ -53,4 +53,25 @@ It's just beautiful buttons
 ### Usage:
 ``` html
     <button class="btn black">Click here</button>
+```
+
+## Navbar
+
+Navbar by default is fixed on top and has a height of 60px
+
+### Usage: 
+``` html
+ <header class="header black">
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu" class="hamburger-menu"></label>
+    <div class="overlay" id="overlay"></div>
+    <div class="menu">
+        <ul class="nav-list">
+            <li class="nav-link">Link 1</li>
+            <li class="nav-link">Link 2</li>
+            <li class="nav-link">Link 3</li>
+        </ul>
+    </div>
+    <h1 class="nav-title">Logo</h1>
+</header>
 ```
