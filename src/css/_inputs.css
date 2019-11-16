@@ -3,6 +3,7 @@
  * Author: Matheus Alexandre de Sena (@matthsena) 
  */
 .field {
+    margin: 0;
     display: flex;
     flex-flow: column-reverse;
 }
