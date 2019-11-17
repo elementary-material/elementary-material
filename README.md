@@ -10,7 +10,7 @@
 - [ ] Forms
 - [x] Grids
 - [x] Inputs
-- [ ] Modals
+- [x] Modals / Dialogs
 - [x] Navbar
 - [ ] Typography
 
@@ -116,5 +116,39 @@ Cards has only outlined option
     eget eu purus. Nulla facilisi. Integer eu laoreet est, a lacinia ligula. Vivamus dictum, ex in
     gravida posuere, enim ligula porta eros, iaculis vehicula erat sapien at libero. Mauris sit amet
     vestibulum magna.
+</div>
+```
+
+## Modals / Dialogs
+
+Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
+
+> **Note:** you can define width and height implementing this code:
+
+``` css
+/* you can set any value, these values are just examples */
+.modal-content {
+    width: 200px;
+    height: 150px;
+}
+```
+**Always your modal stays in the center of the screen**
+
+### Usage: 
+``` html
+  <div class="modal" data-status="hidden" data-modal="modalName">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>This is a modal</h2>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et leo vitae neque eleifend.</p>
+        </div>
+        <!-- to close modal after click on component use modal-close in this cimponent -->
+        <button class="btn modal-close">Ok</button>
+    </div>
+
+    <!-- activate modal: use class modal-trigger and check if data-modal is the same of modal -->
+    <button class="btn blue-grey modal-trigger" data-modal="modalName">Open modal</button>
 </div>
 ```
