@@ -77,7 +77,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1>This is a modal</h1>
-
                 </div>
                 <div class="modal-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et leo vitae neque eleifend
@@ -86,11 +85,24 @@
                         gravida posuere, enim ligula porta eros, iaculis vehicula erat sapien at libero. Mauris sit amet
                         vestibulum magna.</p>
                 </div>
+                <button class="btn modal-close">Ok</button>
+            </div>
+        </div>
+        <div class="modal" data-status="hidden" data-modal="modalName2">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>This is a modal 2</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Empty</p>
+                </div>
 
                 <button class="btn modal-close">Ok</button>
             </div>
         </div>
         <button class="btn blue-grey modal-trigger" data-modal="modalName">Open modal</button>
+        <button class="btn blue-grey modal-trigger" data-modal="modalName2">Open modal 2</button>
+
     </div>
     <noscript id="deferred-styles">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
