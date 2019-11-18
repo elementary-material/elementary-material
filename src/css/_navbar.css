@@ -2,6 +2,7 @@
  * This file contains all nav rules
  * Author: Matheus Alexandre de Sena (@matthsena) 
  */
+
 .header {
     width: 100vw;
     height: 60px;
@@ -20,6 +21,7 @@
 .header .nav-title {
     padding: 26px;
     height: 38px;
+    line-height: 1.2px;
 }
 
 @media(min-width: 769px) {
@@ -28,24 +30,20 @@
         position: absolute;
         top: 0px;
     }
-
     .menu {
         padding: 0 25px;
         margin: 0 0 0 15%;
     }
-
     .nav-list .nav-link {
         display: inline-block;
         vertical-align: middle;
         margin: 0 25px;
         overflow: hidden;
     }
-
     .nav-list .nav-link:hover,
     .header .nav-title:hover {
         cursor: pointer;
     }
-
     .nav-list .nav-link:hover {
         transition: color .4s linear;
         opacity: 0.7;
@@ -56,7 +54,6 @@
     .header .nav-title {
         text-align: center;
     }
-
     .overlay {
         background: #0000009c;
         position: fixed;
@@ -67,16 +64,13 @@
         z-index: 999;
         display: none
     }
-
     #btn-menu:checked+.hamburger-menu+.overlay {
         pointer-events: auto;
         display: inherit
     }
-
     #btn-menu:checked+.hamburger-menu {
         background: var(--close-icon);
     }
-
     .hamburger-menu {
         height: 20px;
         width: 20px;
@@ -88,7 +82,6 @@
         z-index: 999;
         border-radius: 20px;
     }
-
     .menu {
         transform: translateX(-100%);
         transition: transform .2s ease-out;
@@ -103,16 +96,13 @@
         z-index: 9999;
         margin: 60px 0 0 0;
     }
-
     #btn-menu:checked+.hamburger-menu+.overlay+.menu {
         transform: translateX(0);
     }
-
     .nav-list {
         padding: 8px 0;
         margin: 0;
     }
-
     .nav-list .nav-link {
         display: block;
         margin: 0;
