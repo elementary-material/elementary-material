@@ -7,17 +7,21 @@
     <meta name="Description" content="This is an sample of this framework power, it's responsive and really beauty">
     <title>All components sample</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="all.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./all.css">
+    <style>
+        .black {
+            background: rgb(197, 132, 132);
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="content">
+    <div class="container">
 
-        <header class="header indigo">
+        <header class="header black">
             <input type="checkbox" id="btn-menu">
-            <label for="btn-menu" class="hamburger-menu ripple"></label>
+            <label for="btn-menu" class="hamburger-menu"></label>
             <div class="overlay" id="overlay"></div>
             <div class="menu">
                 <ul class="nav-list">
@@ -28,9 +32,7 @@
                 </ul>
             </div>
             <h1 class="nav-title">Menu</h1>
-
         </header>
-
         <div class="row">
             <div class="col md-3 sm-6 xs-12">
                 <div class="field">
@@ -39,40 +41,82 @@
                 </div>
             </div>
             <div class="col md-3 sm-6 xs-12">
-                <button class="btn red ripple">Fx'</button>
-                <button class="btn pink ripple">Fx'</button>
-                <button class="btn purple ripple">Fx'</button>
-                <button class="btn deep-purple ripple">Fx'</button>
-                <button class="btn indigo ripple">Fx'</button>
-                <button class="btn blue ripple">Fx'</button>
-                <button class="btn light-blue ripple">Fx'</button>
-                <button class="btn cyan ripple">Fx'</button>
-                <button class="btn teal ripple">Fx'</button>
-                <button class="btn green ripple">Fx'</button>
-                <button class="btn light-green ripple">Fx'</button>
-                <button class="btn lime ripple">Fx'</button>
-                <button class="btn yellow ripple">Fx'</button>
-                <button class="btn amber ripple">Fx'</button>
-                <button class="btn orange ripple">Fx'</button>
-                <button class="btn deep-orange ripple">Fx'</button>
-                <button class="btn brown ripple">Fx'</button>
-                <button class="btn grey ripple">Fx'</button>
-                <button class="btn black ripple">Fx'</button>
-                <button class="btn white ripple">Fx'</button>
-                <button class="btn blue-grey ripple">Fx'</button>
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
             </div>
             <div class="col md-3 sm-6 xs-12">
                 <div class="card"></div>
             </div>
             <div class="col md-3 sm-6 xs-12"> aaaaaaa</div>
         </div>
-    </div>
-    <style>
-        button {
-            margin: 2px;
-        }
-    </style>
+        <div class="row">
+            <div class="col md-3 sm-6 xs-12">
+                <div class="field">
+                    <input id="name2" class="text-field outlined" placeholder="Type your name">
+                    <label for="name2" class="place-holder">Name</label>
+                </div>
+            </div>
+            <div class="col md-3 sm-6 xs-12">
+                <button class="btn">Lorem Ipsum</button>
+                <button class="btn">Fx'</button>
+                <button class="btn">Fx'</button>
+            </div>
+            <div class="col md-6 sm-6 xs-12">
+                <div class="card">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et leo vitae neque eleifend maximus eget eu purus. Nulla facilisi. Integer eu laoreet est, a lacinia ligula. Vivamus dictum, ex in gravida posuere, enim ligula porta
+                        eros, iaculis vehicula erat sapien at libero. Mauris sit amet vestibulum magna.</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="modal" data-status="hidden" data-modal="modalName">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>This is a modal</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et leo vitae neque eleifend maximus eget eu purus. Nulla facilisi. Integer eu laoreet est, a lacinia ligula. Vivamus dictum, ex in gravida posuere, enim ligula porta
+                        eros, iaculis vehicula erat sapien at libero. Mauris sit amet vestibulum magna.</p>
+                </div>
+                <button class="btn modal-close">Ok</button>
+            </div>
+        </div>
+        <div class="modal" data-status="hidden" data-modal="modalName2">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>This is a modal 2</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Empty</p>
+                </div>
+
+                <button class="btn modal-close">Ok</button>
+            </div>
+        </div>
+        <button class="btn blue-grey modal-trigger" data-modal="modalName">Open modal</button>
+        <button class="btn blue-grey modal-trigger" data-modal="modalName2">Open modal 2</button>
+
+    </div>
+    <noscript id="deferred-styles">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+            var addStylesNode = document.getElementById("deferred-styles");
+            var replacement = document.createElement("div");
+            replacement.innerHTML = addStylesNode.textContent;
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+        if (raf) raf(function() {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
